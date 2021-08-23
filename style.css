@@ -1,48 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-
-* {
-    box-sizing: border-box;
-  }
-  
-  p {
-    font-size: 20px;
-    font-family: sans-serif;
-    color: #6439a9;
-  }
-  
-  .container {
-    padding: 100px 30px;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 800px;
-  }
-  
-  // Relevant styles
-  .image-stack {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image-stack__item--bottom {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 80%; // this is an arbitrary width, depends on the design
-    z-index: -1;
-  }
-  
-  .image-stack__item--top {
-    padding-top: 20px; // arbitrary value
-    padding-right: 20%; // arbitrary value
-    width: 80%; // arbitrary value
-  }
-  
-  img {
-    width: 100%;
-    display: block;
-  }
+:root{
+    font-size: 32px;
 }
-p{
+.container{
+    display: grid;
+    justify-items: center;
+    background: url(./images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding: 3rem;
+
+}
+.img-container{
+    background-image: url(./images/pattern-bg.svg);
+    padding: 3rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+   
+    
+}
+.details{
+   color:  hsl(240, 38%, 20%);
+   text-align: center;
+   font-weight: 300;
+   padding: 1rem;
+}
+.user-img{
+    height: 13rem;
+    width: 12rem;
+}
+
+.profile-name{
     font-family: 'Inter', sans-serif;
-} 
+   font-weight: 700;
+   text-align: center;
+   margin-top: 0;
+
+}
+.profile-work{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: hsl(240, 18%, 77%);
+    display: grid;
+ 
+}
+@media{
+    min-width: 375px;
+   
+
+
+}
+@media {
+    min-width:  1440px;
+   
+}
+
+/* 
+- Dark Blue: hsl(240, 38%, 20%)
+- Grayish Blue: hsl(240, 18%, 77%) */
